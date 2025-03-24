@@ -263,8 +263,8 @@ function getNextFridayThe13th(date) {
       year += 1;
     }
   }
-
-  while (true) {
+  const condition = true;
+  while (condition) {
     const nextDate = new Date(year, month, 13);
     if (nextDate.getDay() === 5) {
       return nextDate;
@@ -276,6 +276,8 @@ function getNextFridayThe13th(date) {
       year += 1;
     }
   }
+
+  return null;
 }
 
 /**
